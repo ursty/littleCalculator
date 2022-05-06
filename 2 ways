@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int nombre;
+
+    for (nombre = 1; nombre <= 12; nombre *=3 )
+    {
+        printf("%d \n", nombre);
+    }
+    printf("%d ", nombre);
+
+}
+
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int incremente();
+
+int main()
+{
+    int nombre;
+
+    for (nombre = 0; nombre <= 10; nombre ++)
+    {
+      incremente();
+      printf("%d ", nombre);
+
+    }
+}
+
+int incremente()
+{
+    static int nombre = 0;
+
+    nombre ++;
+    return nombre;
+}
+
